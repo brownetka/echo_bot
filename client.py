@@ -12,7 +12,7 @@ try:
         time.sleep(3)
 
         if data == 'exit':
-            print('>>>\nExit command recieved\nBye!\n<<<')
+            print('>>>\nExit command received\nBye!\n<<<')
             client.shutdown(socket.SHUT_WR)
             exit()
 

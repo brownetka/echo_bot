@@ -27,3 +27,6 @@ try:
 except KeyboardInterrupt:
     print('Server is shutting down')
     server.shutdown(socket.SHUT_WR)
+except BrokenPipeError:
+    print('Server doesnt have active users...\nShutting down!')
+    server.shutdown(socket.SHUT_WR)
